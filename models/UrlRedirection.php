@@ -27,7 +27,7 @@ use yii\web\NotFoundHttpException;
  * @property User $creator
  * @property User $updater
  */
-class UrlRedirection extends ActiveRecord
+class UrlRedirection extends \common\modules\urlRedirection\baseModels\UrlRedirection
 {
     const TYPE_EQUALS = 1;
     const TYPE_CONTAINS = 2;
@@ -85,13 +85,13 @@ class UrlRedirection extends ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
-    public static function tableName()
-    {
-        return 'url_redirection';
-    }
+//    /**
+//     * @inheritdoc
+//     */
+//    public static function tableName()
+//    {
+//        return 'url_redirection';
+//    }
 
     /**
      * @inheritdoc

@@ -50,7 +50,7 @@ class m170713_023859_create_url_redirection_table extends Migration
             'creator_id',
             'user',
             'id',
-            'CASCADE'
+            'RESTRICT'
         );
 
         // creates index for column `updater_id`
@@ -67,7 +67,7 @@ class m170713_023859_create_url_redirection_table extends Migration
             'updater_id',
             'user',
             'id',
-            'CASCADE'
+            'RESTRICT'
         );
     }
 
