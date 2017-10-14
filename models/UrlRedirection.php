@@ -248,9 +248,6 @@ class UrlRedirection extends \common\modules\urlRedirection\baseModels\UrlRedire
             }
         }
 
-        var_dump($to_url);
-        die;
-
         if ($to_url) {
             header("Location: $to_url", true, $response_code);
             exit();
