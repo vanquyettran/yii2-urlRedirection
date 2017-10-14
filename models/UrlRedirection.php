@@ -248,6 +248,9 @@ class UrlRedirection extends ActiveRecord
             }
         }
 
+        var_dump($to_url);
+        die;
+
         if ($to_url) {
             header("Location: $to_url", true, $response_code);
             exit();
